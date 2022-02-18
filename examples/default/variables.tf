@@ -1,5 +1,3 @@
-variable "cf_username" {}
-variable "cf_password" {}
 variable "private_key_file" {}
 
 
@@ -18,14 +16,6 @@ variable "cartel_secret" {
 variable "cartel_skip_verify" {
   type    = bool
   default = true
-}
-
-variable "cf_org_name" {
-  type = string
-}
-
-variable "cf_space_name" {
-  type = string
 }
 
 variable "hsdp_region" {

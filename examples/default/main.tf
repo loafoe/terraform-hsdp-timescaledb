@@ -1,8 +1,5 @@
-module "superset" {
+module "timescaledb" {
   source = "../../"
-
-  org_name   = var.cf_org_name
-  space_name = var.cf_space_name
 
   user        = var.ldap_user
   user_groups = [var.ldap_user]
