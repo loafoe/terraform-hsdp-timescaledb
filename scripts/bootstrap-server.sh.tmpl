@@ -1,0 +1,26 @@
+#!/bin/bash
+
+kill_timescaledb() {
+  echo Killing timescaledb...
+  docker kill timescaledb
+  docker rm timescaledb
+}
+
+start_timescaledb() {
+  LOG_DRIVER=local
+  if [ ! -z "${enable_fluentd}" ]; then
+    LOG_DRIVER=fluentd
+  fi
+  echo Starting timescaledb...
+  docker run -d \
+    -e POSTGRES_PASSWORD=${password} \
+    --restart always \
+    --name timescaledb \
+    --log-driver=${log_driver} \
+    -p2181:5432 \
+    ${timescaledb_image}
+}
+
+kill_timescaledb
+
+start_timescaledb
