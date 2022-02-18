@@ -1,7 +1,7 @@
 # HSDP TimescaleDB module
 
-This module deploys TimescaleDB on Container Host
-the Apache Superset UI.
+This module deploys TimescaleDB on Container Host. Connect to it from your
+Cloud foundry application or other platform service.
 
 <!--- BEGIN_TF_DOCS --->
 ## Requirements

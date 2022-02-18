@@ -16,7 +16,7 @@ resource "hsdp_container_host" "timescaledb" {
   instance_type = var.instance_type
 
   user_groups     = var.user_groups
-  security_groups = ["analytics"]
+  security_groups = ["postgres"]
 
   user = var.user
 
