@@ -13,7 +13,8 @@ start_timescaledb() {
   fi
   echo Starting timescaledb...
   docker run -d \
-    -e POSTGRES_PASSWORD=${password} \
+    -e POSTGRES_PASSWORD="${password}" \
+    -v timescaledb:/var/lib/postgresql/data
     --restart always \
     --name timescaledb \
     --log-driver=${log_driver} \
