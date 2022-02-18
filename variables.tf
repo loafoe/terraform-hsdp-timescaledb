@@ -36,7 +36,7 @@ variable "private_key" {
 variable "timescaledb_image" {
   description = "The TimescaleDB server image to use"
   type        = string
-  default     = "timescaledb:latest"
+  default     = "timescale/timescaledb:latest-pg12"
 }
 
 variable "fluent_bit_image" {
