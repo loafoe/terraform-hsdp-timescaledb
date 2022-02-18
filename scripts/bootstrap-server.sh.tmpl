@@ -18,7 +18,7 @@ start_timescaledb() {
     --restart always \
     --name timescaledb \
     --log-driver=${log_driver} \
-    -p5432:5432 \
+    -p2181:5432 \
     ${timescaledb_image}
 }
 
