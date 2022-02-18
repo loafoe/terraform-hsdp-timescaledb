@@ -1,8 +1,8 @@
 locals {
-  postfix = var.name_postfix != "" ? var.name_postfix : random_pet.id
+  postfix = var.name_postfix != "" ? var.name_postfix : random_pet.deploy.id
 }
 
-resource "random_pet" "id" {
+resource "random_pet" "deploy" {
 }
 
 resource "random_password" "root" {
@@ -44,7 +44,7 @@ resource "hsdp_container_host_exec" "server" {
       enable_fluentd    = var.hsdp_product_key == "" ? "false" : "true"
       log_driver        = var.hsdp_product_key == "" ? "local" : "fluentd"
       timescaledb_image = var.timescaledb_image
-      timescaledb_id    = random_pet.id
+      timescaledb_id    = random_pet.deploy.id
     })
     destination = "/home/${var.user}/bootstrap-server.sh"
     permissions = "0700"

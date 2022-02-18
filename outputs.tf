@@ -11,5 +11,5 @@ output "timescaledb_ip" {
 
 output "timescaledb_id" {
   description = "Server ID of TimescaleDB"
-  value       = random_pet.id
+  value       = random_pet.deploy.id
 }
