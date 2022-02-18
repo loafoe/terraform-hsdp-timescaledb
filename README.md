@@ -28,7 +28,7 @@ No modules.
 | [hsdp_container_host.timescaledb](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/resources/container_host) | resource |
 | [hsdp_container_host_exec.server](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/resources/container_host_exec) | resource |
 | [random_password.root](https://registry.terraform.io/providers/random/latest/docs/resources/password) | resource |
-| [random_pet.id](https://registry.terraform.io/providers/random/latest/docs/resources/pet) | resource |
+| [random_pet.deploy](https://registry.terraform.io/providers/random/latest/docs/resources/pet) | resource |
 | [hsdp_config.cf](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/data-sources/config) | data source |
 | [hsdp_config.logging](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/data-sources/config) | data source |
 
