@@ -22,10 +22,6 @@ resource "hsdp_container_host" "timescaledb" {
 
   private_key = var.private_key
   agent       = var.agent
-
-  commands = [
-    "docker volume create timescaledb",
-  ]
 }
 
 resource "hsdp_container_host_exec" "server" {
@@ -64,6 +60,7 @@ resource "hsdp_container_host_exec" "server" {
   }
 
   commands = [
+    "docker volume create timescaledb || true",
     "/home/${var.user}/bootstrap-fluent-bit.sh",
     "/home/${var.user}/bootstrap-server.sh",
   ]
