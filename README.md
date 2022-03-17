@@ -14,8 +14,8 @@ Cloud foundry application or other platform service.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_hsdp"></a> [hsdp](#provider\_hsdp) | 0.30.1 |
-| <a name="provider_random"></a> [random](#provider\_random) | 3.1.0 |
+| <a name="provider_hsdp"></a> [hsdp](#provider\_hsdp) | 0.30.10 |
+| <a name="provider_random"></a> [random](#provider\_random) | 3.1.1 |
 
 ## Modules
 
