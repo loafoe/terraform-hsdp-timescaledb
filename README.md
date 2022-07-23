@@ -80,6 +80,7 @@ License is MIT
 | Name | Version |
 |------|---------|
 | <a name="requirement_hsdp"></a> [hsdp](#requirement\_hsdp) | >= 0.30.0 |
+| <a name="requirement_ssh"></a> [ssh](#requirement\_ssh) | >= 2.1.0 |
 
 ## Providers
 
@@ -87,6 +88,7 @@ License is MIT
 |------|---------|
 | <a name="provider_hsdp"></a> [hsdp](#provider\_hsdp) | 0.36.0 |
 | <a name="provider_random"></a> [random](#provider\_random) | 3.3.2 |
+| <a name="provider_ssh"></a> [ssh](#provider\_ssh) | 2.1.0 |
 
 ## Modules
 
@@ -97,9 +99,9 @@ No modules.
 | Name | Type |
 |------|------|
 | [hsdp_container_host.timescaledb](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/resources/container_host) | resource |
-| [hsdp_container_host_exec.server](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/resources/container_host_exec) | resource |
 | [random_password.root](https://registry.terraform.io/providers/random/latest/docs/resources/password) | resource |
 | [random_pet.deploy](https://registry.terraform.io/providers/random/latest/docs/resources/pet) | resource |
+| [ssh_resource.server](https://registry.terraform.io/providers/loafoe/ssh/latest/docs/resources/resource) | resource |
 | [hsdp_config.cf](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/data-sources/config) | data source |
 | [hsdp_config.logging](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/data-sources/config) | data source |
 
