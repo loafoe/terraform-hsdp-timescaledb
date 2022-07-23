@@ -24,7 +24,7 @@ resource "hsdp_container_host" "timescaledb" {
   agent       = var.agent
 }
 
-resource "hsdp_container_host_exec" "server" {
+resource "ssh_resource" "server" {
   triggers = {
     cluster_instance_ids = hsdp_container_host.timescaledb.id
   }
