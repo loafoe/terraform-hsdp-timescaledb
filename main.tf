@@ -29,10 +29,11 @@ resource "ssh_resource" "server" {
     cluster_instance_ids = hsdp_container_host.timescaledb.id
   }
 
-  host        = hsdp_container_host.timescaledb.private_ip
-  user        = var.user
-  private_key = var.private_key
-  agent       = var.agent
+  host         = hsdp_container_host.timescaledb.private_ip
+  bastion_host = data.hsdp_config.gw.host
+  user         = var.user
+  private_key  = var.private_key
+  agent        = var.agent
 
   file {
     content = templatefile("${path.module}/scripts/bootstrap-server.sh.tmpl", {
