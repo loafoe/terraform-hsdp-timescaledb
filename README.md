@@ -103,6 +103,7 @@ No modules.
 | [random_pet.deploy](https://registry.terraform.io/providers/random/latest/docs/resources/pet) | resource |
 | [ssh_resource.server](https://registry.terraform.io/providers/loafoe/ssh/latest/docs/resources/resource) | resource |
 | [hsdp_config.cf](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/data-sources/config) | data source |
+| [hsdp_config.gw](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/data-sources/config) | data source |
 | [hsdp_config.logging](https://registry.terraform.io/providers/philips-software/hsdp/latest/docs/data-sources/config) | data source |
 
 ## Inputs
