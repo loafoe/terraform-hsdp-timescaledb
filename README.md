@@ -86,7 +86,7 @@ License is MIT
 
 | Name | Version |
 |------|---------|
-| <a name="provider_hsdp"></a> [hsdp](#provider\_hsdp) | 0.37.3 |
+| <a name="provider_hsdp"></a> [hsdp](#provider\_hsdp) | 0.37.6 |
 | <a name="provider_random"></a> [random](#provider\_random) | 3.4.3 |
 | <a name="provider_ssh"></a> [ssh](#provider\_ssh) | 2.1.0 |
 
