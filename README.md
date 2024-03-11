@@ -86,9 +86,9 @@ License is MIT
 
 | Name | Version |
 |------|---------|
-| <a name="provider_hsdp"></a> [hsdp](#provider\_hsdp) | 0.38.9 |
-| <a name="provider_random"></a> [random](#provider\_random) | 3.4.3 |
-| <a name="provider_ssh"></a> [ssh](#provider\_ssh) | 2.3.0 |
+| <a name="provider_hsdp"></a> [hsdp](#provider\_hsdp) | 0.42.1 |
+| <a name="provider_random"></a> [random](#provider\_random) | 3.5.1 |
+| <a name="provider_ssh"></a> [ssh](#provider\_ssh) | 2.6.0 |
 
 ## Modules
 
